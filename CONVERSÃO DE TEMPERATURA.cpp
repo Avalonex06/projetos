@@ -7,14 +7,14 @@ int main()
     float temperatura, resultado;
     do
     {
-        cout<<"======menu======\n";
+        cout<<"\n======menu======\n";
         cout << "escolha uma opcao\n";
         cout << "1.celcius para  Fahrenheit\n";
         cout << "2.Celsius para Kelvin\n";
         cout << "3.Fahrenheit para Celsius\n";
         cout << "4.Kelvin para Celsius\n";
         cout << "5 .encerra o codigo\n";
-        cout<<"==============";
+        cout<<"==============\n";
         cin >> opcao;
         switch (opcao)
         {
@@ -46,7 +46,7 @@ int main()
             cout << "Encerra o codigo\n";
             break;
         default:
-            cout << "opcao invalida";
+            cout << "opcao invalida\n";
             break;
         }
     } while (opcao != 5);
