@@ -1,0 +1,36 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+
+struct insumos
+{string nome;
+    int quantidade;
+    bool possui =true;
+};
+
+int main ()
+
+{
+insumos fertilizantes;
+cout<<"digite o nome do insumo";
+getline(cin, fertilizantes.nome);
+
+cout<<"digite a quantidade:";
+cin>>fertilizantes.quantidade;
+fertilizantes.possui= (fertilizantes.quantidade > 0);
+ cout<<"\n Insumo cadastrado :" << endl;
+ cout<<"Nome:"<< fertilizantes.nome<<endl;
+ cout<<"Quantidade :" <<fertilizantes.quantidade<<endl;
+
+ if (fertilizantes.possui)
+    {
+        cout<<"possui no estoque";
+    }else{
+        cout<<"nao possui no estoque";
+    }
+
+ return 0;
+
+
+}
