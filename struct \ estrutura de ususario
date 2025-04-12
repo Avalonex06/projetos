@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+
+struct  cadastro{
+string usuario;
+float dinheiro;
+bool capital =true;
+};
+ int main()
+ {
+    cadastro investimentos;
+    cout<<"Digite o nome do cliente:";
+    getline(cin, investimentos.usuario);
+
+    cout<<"digite o valor que o cliente investiu:";
+    cin>> investimentos.dinheiro;
+    investimentos.capital =(investimentos.dinheiro < 0);
+    cout<<"\n Cliente cadastro :"<<endl;
+    cout<<"cliente:"<<investimentos.usuario<<endl;
+    cout<<" valor na conta:"<<investimentos.dinheiro<<endl;
+
+    if(investimentos.dinheiro)
+{
+    cout<<"possui capital"<<endl;
+}
+else{
+    cout<<"nao possui capital"<<endl;
+}
+
+if (investimentos.dinheiro>=1500)
+{
+cout<<"pode investir"<<endl;
+}else 
+{
+    cout<<"Nao pode investir"<<endl;
+}
+
+
+  return 0;
+ }
